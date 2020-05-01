@@ -35,8 +35,21 @@ class App extends React.Component {
         if (name === employee.name) employeeArray.push(employee);
       }
     }
-    employees = employeeArray;
-    this.setState({ employees });
+    this.setState({ employees: employeeArray });
+  };
+
+  // Function that filters employees by role
+  filterByRole = (event, str) => {
+    console.log(event.target.value);
+    str = event.target.value;
+    var employees = this.state.employees;
+    var filteredEmployees = employees.filter((employee) => {
+      return (
+        employee.title.includes(str) ||
+        employee.title.includes(str.toUpperCase())
+      );
+    });
+    this.setState({ employees: filteredEmployees });
   };
 
   // Rendering the page
@@ -45,7 +58,7 @@ class App extends React.Component {
       <div>
         <Jumbotron />
         <div className="container">
-          <Header sort={this.sortByName} />
+          <Header sort={this.sortByName} sieve={this.filterByRole} />
           <hr />
           {this.buildRow()}
         </div>

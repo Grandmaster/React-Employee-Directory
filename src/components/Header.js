@@ -22,7 +22,15 @@ function Header(props) {
       </div>
       <div className="col">E-mail</div>
       <div className="col">Phone Number</div>
-      <div className="col">Role</div>
+      <div className="col">
+        Role
+        <input
+          placeholder="filter by role..."
+          onChange={(event) => {
+            props.sieve(event);
+          }}
+        />
+      </div>
     </div>
   );
 }
