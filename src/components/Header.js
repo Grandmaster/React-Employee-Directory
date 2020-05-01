@@ -5,10 +5,18 @@ function Header(props) {
     <div className="row">
       <div className="col">
         Name
-        <button onClick={props.asc}>
+        <button
+          onClick={() => {
+            props.sort("ascending");
+          }}
+        >
           <i className="fa fa-sort-asc" aria-hidden="true"></i>
         </button>
-        <button>
+        <button
+          onClick={() => {
+            props.sort("descending");
+          }}
+        >
           <i className="fa fa-sort-desc" aria-hidden="true"></i>
         </button>
       </div>

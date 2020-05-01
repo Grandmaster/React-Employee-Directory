@@ -17,13 +17,18 @@ class App extends React.Component {
     });
   };
 
-  // Function that sorts employees by name in ascending order
-  sortByNameAsc = () => {
+  // Function that sorts employees by name in ascending/descending order
+  sortByName = (order) => {
     var employees = this.state.employees;
     var names = employees.map((employee) => {
       return employee.name;
     });
-    var sortedNames = names.sort();
+    var sortedNames;
+    if (order === "ascending") {
+      sortedNames = names.sort();
+    } else if (order === "descending") {
+      sortedNames = names.reverse();
+    }
     var employeeArray = [];
     for (let name of sortedNames) {
       for (let employee of employees) {
@@ -34,15 +39,13 @@ class App extends React.Component {
     this.setState({ employees });
   };
 
-  // Function that sorts employees by name in descending order
-
   // Rendering the page
   render() {
     return (
       <div>
         <Jumbotron />
         <div className="container">
-          <Header asc={this.sortByNameAsc} />
+          <Header sort={this.sortByName} />
           <hr />
           {this.buildRow()}
         </div>
