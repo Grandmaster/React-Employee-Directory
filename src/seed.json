@@ -4,5 +4,29 @@
     "email": "gina@gmail.com",
     "cell": 4849662734,
     "title": "Software Engineer"
+  },
+  {
+    "name": "John",
+    "email": "john@gmail.com",
+    "cell": 5039991234,
+    "title": "Quality Engineer"
+  },
+  {
+    "name": "Frank",
+    "email": "frank@gmail.com",
+    "cell": 4891013321,
+    "title": "Financial analyst"
+  },
+  {
+    "name": "Laurie",
+    "email": "laurie@gmail.com",
+    "cell": 2329541786,
+    "title": "COO"
+  },
+  {
+    "name": "Lena",
+    "email": "lena@gmail.com",
+    "cell": 4843326666,
+    "title": "Software Engineer"
   }
 ]
