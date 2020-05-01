@@ -1,7 +1,9 @@
 import React from "react";
 import Jumbotron from "./components/Jumbotron";
 import Row from "./components/Row";
+import Header from "./components/Header";
 import employees from "./seed.json";
+import "./css/app.css";
 
 class App extends React.Component {
   // Reading data from the seed file
@@ -19,7 +21,11 @@ class App extends React.Component {
     return (
       <div>
         <Jumbotron />
-        <div className="container">{this.buildRow()}</div>
+        <div className="container">
+          <Header />
+          <hr />
+          {this.buildRow()}
+        </div>
       </div>
     );
   }
