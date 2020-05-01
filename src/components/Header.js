@@ -5,7 +5,7 @@ function Header(props) {
     <div className="row">
       <div className="col">
         Name
-        <button>
+        <button onClick={props.asc}>
           <i className="fa fa-sort-asc" aria-hidden="true"></i>
         </button>
         <button>
