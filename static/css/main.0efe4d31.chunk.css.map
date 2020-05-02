@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA,KACE,kBACF,CAEA,iBACE,eACF","file":"main.0efe4d31.chunk.css","sourcesContent":[".row {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.row:first-child {\r\n  font-weight: bold;\r\n}\r\n"]}
