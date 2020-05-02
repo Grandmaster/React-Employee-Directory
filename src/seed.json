@@ -15,7 +15,7 @@
     "name": "Frank",
     "email": "frank@gmail.com",
     "cell": 4891013321,
-    "title": "Financial analyst"
+    "title": "Financial Analyst"
   },
   {
     "name": "Laurie",
@@ -33,6 +33,42 @@
     "name": "Abigail",
     "email": "abigail@gmail.com",
     "cell": 1013227865,
-    "title": "Marketing lead"
+    "title": "Marketing Lead"
+  },
+  {
+    "name": "Chad",
+    "email": "chad@gmail.com",
+    "cell": 1012230005,
+    "title": "Marketing"
+  },
+  {
+    "name": "Roman",
+    "email": "roman@gmail.com",
+    "cell": 3567430909,
+    "title": "Software Engineer"
+  },
+  {
+    "name": "Zac",
+    "email": "zac@gmail.com",
+    "cell": 3013224445,
+    "title": "Marketing"
+  },
+  {
+    "name": "Dani",
+    "email": "dani@gmail.com",
+    "cell": 4043210768,
+    "title": "Lead Developer"
+  },
+  {
+    "name": "Ryan",
+    "email": "ryan@gmail.com",
+    "cell": 5556934511,
+    "title": "Developer"
+  },
+  {
+    "name": "Riley",
+    "email": "riley@gmail.com",
+    "cell": 3231117777,
+    "title": "Financial Analyst"
   }
 ]

@@ -8,7 +8,7 @@ import "./css/app.css";
 
 class App extends React.Component {
   // Reading data from the seed file
-  state = { employees };
+  state = { employees, originalEmployees: employees };
 
   // Building row html from seed file
   buildRow = () => {
@@ -40,8 +40,13 @@ class App extends React.Component {
 
   // Function that filters employees by role
   filterByRole = (event, str) => {
-    console.log(event.target.value);
     str = event.target.value;
+    if (str === "") {
+      this.setState({ employees: this.state.originalEmployees });
+      return;
+    }
+    str = str.replace(str[0], str[0].toUpperCase());
+    console.log(str);
     var employees = this.state.employees;
     var filteredEmployees = employees.filter((employee) => {
       return (
